@@ -49,16 +49,3 @@ driver-risk-score/
 | Distraction | `phone_use_per_trip` | Phone interaction events per trip |
 | Driver | `age` | Driver age (years) |
 | Vehicle | `vehicle_age_yrs` | Vehicle age (years) |
-
-### Engineered Features (6)
-
-| Feature | Formula | Purpose |
-|---|---|---|
-| `harsh_event_index` | Weighted sum of braking, accel, cornering | Single composite harsh-driving score |
-| `speed_risk_index` | Speeding % × 0.55 + normalised max speed × 0.45 | Combined speed risk signal |
-| `risk_time_pct` | Night driving × 0.6 + rush hour × 0.4 | High-risk time exposure |
-| `distraction_score` | Phone use / max, clipped 0–1 | Normalised distraction level |
-| `mileage_band` | Binned monthly km (0–3) | Exposure category |
-| `age_risk_flag` | 1 if age < 25 or age > 65 | U-shaped age risk indicator |
-
----
